@@ -14,13 +14,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        new CountDownTimer(10000, 1000){
+        new CountDownTimer(10000, 1000) {
 
             @Override
             public void onTick(long millisUntilFinished) {
 
                 Log.i("onTick: ", "Seconds remaining: "
-                        + String.valueOf(millisUntilFinished));
+                        + millisUntilFinished / 1000);
 
             }
 
